@@ -1,0 +1,51 @@
+body {
+    font-family: helvetica;
+    font-size: 22px;
+    color: seashell;
+    opacity: 0.9;
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 100% auto auto auto auto;
+    grid-template-rows: 69px auto auto auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "tea-of-the-month tea-of-the-month tea-of-the-month tea-of-the-month"
+      "location location location location"
+      "footer footer footer footer";
+  }
+  
+  .header {
+        grid-area: header; 
+        background-color: black;
+        position: sticky;
+        text-align: left;
+        border-bottom: 1px solid seashell;
+        
+    }
+  .logo {
+      margin-left: 10px;
+  }
+  nav {
+      display: inline;
+      float: right;
+  }
+  .main { 
+      grid-area: main;
+      background-color: black;
+     }
+  
+  .tea-of-the-month { 
+      grid-area: tea-of-the-month; 
+      background-color: black;
+    }
+  
+  .location { 
+      grid-area: location; }
+  
+  .footer { 
+      grid-area: footer; }
+  
